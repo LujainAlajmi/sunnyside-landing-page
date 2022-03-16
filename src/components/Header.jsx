@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import ArrowDown from "../images/icon-arrow-down.svg";
 function Header() {
+  const [toggle, setToggele] = useState(false);
+  const handleClick = () => {
+    setToggele(!toggle);
+  };
   return (
     //   Mobile settings
-    <div className="xs:grid h-screen bg-cover bg-center bg-no-repeat bg-ImageHeaderMobile sm:hidden">
-      <nav className="">
-        <ul className="flex flex-row justify-between m-7">
+    <div className="xs:flex flex-col h-screen bg-cover bg-center bg-no-repeat bg-ImageHeaderMobile  sm:hidden">
+      <nav className="m-7 static">
+        <ul className="flex flex-row justify-between ">
           <li className="font-bold">
             {/* <img src={Logo} alt="logo" /> */}
             <svg width="124" height="24" xmlns="http://www.w3.org/2000/svg">
@@ -16,7 +20,7 @@ function Header() {
               />
             </svg>
           </li>
-          <li>
+          <li onClick={handleClick}>
             <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z"
@@ -26,15 +30,30 @@ function Header() {
             </svg>
           </li>
         </ul>
+        {toggle && (
+          <div className="bg-[#fffbf8] text-center flex flex-col absolute w-[80%] h-1/2 top-20 right-11 place-self-center">
+            <ul className="py-10 text-2xl text-DarkGrayishBlue  font-[Barlow]">
+              <li className="py-5">About</li>
+              <li className="py-5">Services</li>
+              <li className="py-5">Projects</li>
+              <li className="">
+                <button className=" bg-Yellow p-5 rounded-full text-VeryDarkGrayishBlue font-[Fraunces]">
+                  CONTACT
+                </button>
+              </li>
+            </ul>
+          </div>
+        )}
       </nav>
 
-      <h1 className=" text-White uppercase mx-auto tracking-wide text-6xl text-center">
-        we are creative
-      </h1>
-      <div className="mx-auto">
-        <img src={ArrowDown} alt="" className="object-cover mb-14 h-52" />
+      <div className="flex flex-col items-center mt-24 ">
+        <h1 className="text-White uppercase tracking-wide text-6xl text-center px-10">
+          we are creative
+        </h1>
+        <div className=" mt-24">
+          <img src={ArrowDown} alt="" className="h-52" />
+        </div>
       </div>
-
       {/* <img className="z-0" src={ImageHeaderMobile} alt="header" /> */}
     </div>
   );
