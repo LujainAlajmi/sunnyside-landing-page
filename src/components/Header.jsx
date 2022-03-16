@@ -30,28 +30,28 @@ function Header() {
             </svg>
           </li>
         </ul>
-        {toggle && (
-          <div className="bg-[#fffbf8] text-center flex flex-col absolute w-[80%] h-1/2 top-20 right-11 place-self-center">
-            <ul className="py-10 text-2xl text-DarkGrayishBlue  font-[Barlow]">
-              <li className="py-5">About</li>
-              <li className="py-5">Services</li>
-              <li className="py-5">Projects</li>
-              <li className="">
-                <button className=" bg-Yellow p-5 rounded-full text-VeryDarkGrayishBlue font-[Fraunces]">
-                  CONTACT
-                </button>
-              </li>
-            </ul>
-          </div>
-        )}
       </nav>
+      {toggle && (
+        <div className="bg-[#fffbf8] text-center flex flex-col absolute w-[80%] h-1/2 top-20 right-10 place-self-center">
+          <ul className="py-1 text-xl text-DarkGrayishBlue  font-[Barlow]">
+            <li className="py-4">About</li>
+            <li className="py-4">Services</li>
+            <li className="py-4">Projects</li>
+            <li className="py-4">
+              <button className=" bg-Yellow p-3 rounded-full text-VeryDarkGrayishBlue font-[Fraunces] text-sm">
+                CONTACT
+              </button>
+            </li>
+          </ul>
+        </div>
+      )}
 
-      <div className="flex flex-col items-center mt-24 ">
-        <h1 className="text-White uppercase tracking-wide text-6xl text-center px-10">
+      <div className="flex flex-col items-center mt-12 ">
+        <h1 className="text-White uppercase text-4xl text-center px-10 tracking-widest">
           we are creative
         </h1>
-        <div className=" mt-24">
-          <img src={ArrowDown} alt="" className="h-52" />
+        <div className="mt-20">
+          <img src={ArrowDown} alt="" className=" h-28" />
         </div>
       </div>
       {/* <img className="z-0" src={ImageHeaderMobile} alt="header" /> */}
