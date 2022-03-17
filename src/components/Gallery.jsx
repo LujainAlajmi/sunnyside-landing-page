@@ -25,6 +25,15 @@ function Gallery() {
           </div>
         </div>
       </div>
+      {/* desktop settings */}
+      <div className="sm:flex flex-row  xs:hidden">
+        <div className="flex flex-row w-[25%]">
+          <img src={GalleryMilkbottlesDesktop} alt="" />
+          <img src={GalleryOrangeDesktop} alt="" />
+          <img src={GalleryConeDesktop} alt="" />
+          <img src={GallerySugarCubesDesktop} alt="" />
+        </div>
+      </div>
     </div>
   );
 }
