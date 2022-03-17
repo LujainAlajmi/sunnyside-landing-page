@@ -10,8 +10,8 @@ function App() {
     <div>
       <Header />
       <Main />
-      <Testimonials />
       <Gallery />
+      <Testimonials />
       <Footer />
     </div>
   );

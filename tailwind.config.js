@@ -22,6 +22,13 @@ module.exports = {
       backgroundImage: {
         ImageHeaderMobile: "url('./images/mobile/image-header.jpg')",
         ImageHeaderDesktop: "url('./images/desktop/image-header.jpg')",
+        ImagePhotographyMobile: "url('./images/mobile/image-photography.jpg')",
+        ImagePhotographyDesktop:
+          "url('./images/desktop/image-photography.jpg')",
+        imageGraphicDesignMobile:
+          "url('./images/mobile/image-graphic-design.jpg')",
+        imageGraphicDesignDesktop:
+          "url('./images/desktop/image-graphic-design.jpg')",
       },
     },
   },
