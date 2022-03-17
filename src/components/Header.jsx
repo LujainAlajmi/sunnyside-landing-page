@@ -66,22 +66,22 @@ function Header() {
               fill-rule="nonzero"
             />
           </svg>
-          <ul className="flex flex-row  text-xs mx-2 font-[Barlow] text-White items-center">
+          <ul className="flex flex-row  text-sm mx-2 font-[Barlow] text-White items-center">
             <li className="px-2">About</li>
             <li className="px-2">Services</li>
             <li className="px-2">Projects</li>
-            <li className="px-2 font-[Fraunces] text-VeryDarkDesaturatedBlue ">
-              <button className=" py-2 px-4 rounded-full bg-White hover:bg-[#6fcffc] hover:text-White">
+            <li className="px-3 font-[Fraunces] text-VeryDarkDesaturatedBlue ">
+              <button className=" py-2 px-5 rounded-full bg-White hover:bg-[#6fcffc] hover:text-White">
                 CONTACT
               </button>
             </li>
           </ul>
         </nav>
         <div className="flex flex-col items-center mt-12 ">
-          <h1 className="text-White uppercase text-4xl text-center px-10 tracking-widest">
+          <h1 className="text-White uppercase text-6xl text-center px-10 tracking-widest">
             we are creatives
           </h1>
-          <div className=" mt-12">
+          <div className=" mt-28">
             <img src={ArrowDown} alt="" className=" h-28" />
           </div>
         </div>
